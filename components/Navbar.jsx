@@ -16,8 +16,6 @@ const Navbar = () => {
    >
 
 
-
-    
    </motion.nav>
   )
 }
