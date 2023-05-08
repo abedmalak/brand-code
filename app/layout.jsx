@@ -10,14 +10,16 @@ export const metadata = {
   const RootLayout = ({ children }) => (
     <html lang='en'>
       <body>
-          <div className='main'> {/**
+          <div className='main bg-black overflow-hidden'> {/**
            * all the gradient is wrapped around main
            */}
             <div className='gradient' /> {/* changes the background*/}
           </div>
   
-          <main className='app'> {/*** This is where the app is, the nav stays on top and the footer under the children*/}
+          <main className='app'>
             <Navbar />
+   {/*** This is where the app is, the nav stays on top and the footer under the children*/}
+            
             {children}
             <Footer />
           </main>

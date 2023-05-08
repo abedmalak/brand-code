@@ -14,8 +14,21 @@ const Navbar = () => {
    whileInView='show'
    className={`${styles.xPaddings} py-8 relative`}
    >
-
-
+    <div className={`${styles.innerwidth} mx-auto flex justify-between gap-8`}>
+    <div className='text-wh'>
+      Left
+    </div>
+    <div>
+      <h2 className='font-extrabold text-[24px] leading-[30px] text-white'>
+        Brand
+        <span className='text-ff'>Code</span>
+      </h2>
+    </div>
+    <div>
+      Right
+    </div>
+    </div>
+    
    </motion.nav>
   )
 }
